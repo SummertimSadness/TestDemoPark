@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Base64nl (1.2)
+  - pop (1.0.8)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -28,11 +29,13 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Base64nl
+  - pop
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
-COCOAPODS: 0.39.0.beta.4
+COCOAPODS: 0.39.0

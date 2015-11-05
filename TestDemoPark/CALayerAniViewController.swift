@@ -9,13 +9,15 @@
 import UIKit
 
 class CALayerAniViewController: UIViewController {
-    let width:CGFloat = 50
-    let photoWidth:CGFloat = 150
-    let imageView = UIImageView(frame: CGRectMake(100, 100, 50, 50))
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var square: UIView!
+//    let width:CGFloat = 50
+//    let photoWidth:CGFloat = 150
+//    let imageView = UIImageView(frame: CGRectMake(100, 100, 50, 50))
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "20150727091942")
-        self.view.addSubview(imageView)
+//        imageView.image = UIImage(named: "20150727091942")
+//        self.view.addSubview(imageView)
         
         // Do any additional setup after loading the view.
 //        drawMyLayer()
@@ -58,6 +60,73 @@ class CALayerAniViewController: UIViewController {
 //        self.view.layer.addSublayer(layer)
 //        //调用图层setNeedDisplay,否则代理方法不会被调用
 ////        layer.setNeedsDisplay()
+        
+        
+        
+        /*
+        POPBasicAnimation使用最广泛 提供固定时间间隔的动画(如淡入淡出效果)
+        duration:0.4    //动画间隔
+        */
+        //        let anBasic = POPBasicAnimation(propertyNamed: kPOPLayerPositionX)
+        //        anBasic.toValue = self.square.center.y+200
+        //        anBasic.beginTime = CACurrentMediaTime()+1.0
+        //        anBasic.repeatCount = 5
+        //        self.square.pop_addAnimation(anBasic, forKey: "position")
+        
+        
+        /*
+        POPSpringAnimation提供一个类似弹簧一般的动画效果
+        springBounciness:4.0    //[0-20] 弹力 越大则震动幅度越大
+        springSpeed     :12.0   //[0-20] 速度 越大则动画结束越快
+        dynamicsTension :0      //拉力  接下来这三个都跟物理力学模拟相关 数值调整起来也很费时 没事不建议使用哈
+        dynamicsFriction:0      //摩擦 同上
+        dynamicsMass    :0      //质量 同上
+        */
+        //        let anBasic = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
+        //        anBasic.toValue = self.square.center.y+200
+        //        anBasic.springBounciness = 5
+        //        anBasic.beginTime = CACurrentMediaTime()+1.0
+        //        anBasic.repeatCount = 5
+        //        self.square.pop_addAnimation(anBasic, forKey: "position")
+        
+        
+        
+        /*
+        POPDecayAnimation提供一个过阻尼效果(其实Spring是一种欠阻尼效果)
+        deceleration:0.998  //衰减系数(越小则衰减得越快)
+        */
+        //        let anBasic = POPDecayAnimation(propertyNamed: kPOPLayerPositionX)
+        //        anBasic.velocity = 300
+        //        anBasic.beginTime = CACurrentMediaTime()+1.0
+        //        self.square.pop_addAnimation(anBasic, forKey: "position")
+        
+        
+        
+        /*
+        POP默认支持的三种动画都继承自POPPropertyAnimation。POPPropertyAnimation中定义了一个叫property的属性( 之前没有用到它是因为POP根据不同的默认动画属性帮你生成了默认的property) 而这个property则是用来驱动POP的动画效果中的重要一环。
+        readBlock告诉POP当前的属性值
+        
+        writeBlock中修改变化后的属性值
+        
+        threashold决定了动画变化间隔的阈值，值越大writeBlock的调用次数越少
+        */
+        let popr = POPAnimatableProperty.propertyWithName("prop") { (prop:POPMutableAnimatableProperty!) -> Void in
+            prop.writeBlock = { (label:AnyObject!, values:UnsafePointer<CGFloat>) -> Void in
+                if let labell = label as? UILabel {
+                    let sec = Float(values[0])
+                    labell.text = "\(Int(sec/60)):\(Int(sec%60)):\(Int(sec*100)%100)"
+                }
+                
+            }
+        }
+        let anBasic = POPBasicAnimation.linearAnimation()//秒表当然必须是线性的时间函数
+        anBasic.property = popr as! POPAnimatableProperty
+        anBasic.fromValue = 0
+        anBasic.toValue = 180
+        anBasic.duration = 180
+        anBasic.beginTime = CACurrentMediaTime()+1
+        
+        timeLabel.pop_addAnimation(anBasic, forKey: "countDown")
         
     }
 //    override func drawLayer(layer: CALayer, inContext ctx: CGContext) {
@@ -106,24 +175,21 @@ class CALayerAniViewController: UIViewController {
 //        
 //        
 //    }
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let touch = (touches as NSSet).allObjects.last as? UITouch {
-            /*创建弹性动画
-            damping:阻尼，范围0-1，阻尼越接近于0，弹性效果越明显
-            velocity:弹性复位的速度
-            */
-            let damping:CGFloat = 0.2
-            let velocity:CGFloat = 3.0
-            UIView.animateWithDuration(3.0, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-                self.imageView.center = touch.locationInView(self.view)
-                }, completion: nil)
-            
-            
-        }
-        
-        
-        
-    }
+//    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        if let touch = (touches as NSSet).allObjects.last as? UITouch {
+//            /*创建弹性动画
+//            damping:阻尼，范围0-1，阻尼越接近于0，弹性效果越明显
+//            velocity:弹性复位的速度
+//            */
+//            let damping:CGFloat = 0.2
+//            let velocity:CGFloat = 3.0
+//            UIView.animateWithDuration(3.0, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+//                self.imageView.center = touch.locationInView(self.view)
+//                }, completion: nil)
+//            
+//            
+//        }
+//    }
 
     
 }
