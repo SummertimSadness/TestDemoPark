@@ -9,9 +9,9 @@
 import UIKit
 
 class RootTableViewController: UITableViewController {
-    let titleArr = ["测试webView","水杯动画","estimatedRowHeight行高自适应","自定义输入框","网络请求提示框","RSA加密"]
-    let detailTextArr = ["","点击可以再次播放","实现基于约束的自适应单元格的高度tabelView","MMTextFieldEffects","",""]
-    let viewControllerArr = ["YaWebViewController","WaterGlassAnimationViewController","YaAutoLayoutTableViewController","MMTextFieldEffectsTableViewController","NetworkLoadTestViewController","RSAEncryptorViewController"]
+    let titleArr = ["测试webView","水杯动画","estimatedRowHeight行高自适应","自定义输入框","网络请求提示框","RSA加密","让你的应用“动”起来"]
+    let detailTextArr = ["","点击可以再次播放","实现基于约束的自适应单元格的高度tabelView","MMTextFieldEffects","","","让你的应用“动”起来"]
+    let viewControllerArr = ["YaWebViewController","WaterGlassAnimationViewController","YaAutoLayoutTableViewController","MMTextFieldEffectsTableViewController","NetworkLoadTestViewController","RSAEncryptorViewController","CALayerAniViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

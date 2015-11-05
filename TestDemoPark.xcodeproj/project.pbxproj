@@ -7,56 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5006653B1BD0A6B900B38B93 /* YANetworkLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006653A1BD0A6B900B38B93 /* YANetworkLoadView.xib */; settings = {ASSET_TAGS = (); }; };
-		5006653E1BD0E6A000B38B93 /* RSAEncryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006653D1BD0E6A000B38B93 /* RSAEncryptorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		500665501BD0ED5700B38B93 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006654F1BD0ED5700B38B93 /* RSA.m */; settings = {ASSET_TAGS = (); }; };
-		500665561BD0F4D500B38B93 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 500665531BD0F4D500B38B93 /* NSData+CommonCrypto.m */; settings = {ASSET_TAGS = (); }; };
-		500665571BD0F4D500B38B93 /* RSAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 500665551BD0F4D500B38B93 /* RSAESCryptor.m */; settings = {ASSET_TAGS = (); }; };
-		500665591BD0F75300B38B93 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 500665581BD0F75300B38B93 /* public_key.der */; settings = {ASSET_TAGS = (); }; };
-		5006655C1BD0F8D700B38B93 /* YARSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006655B1BD0F8D700B38B93 /* YARSA.m */; settings = {ASSET_TAGS = (); }; };
-		502247141BCB78B300A1D804 /* ichiro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470C1BCB78B300A1D804 /* ichiro.gif */; settings = {ASSET_TAGS = (); }; };
-		502247151BCB78B300A1D804 /* juro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470D1BCB78B300A1D804 /* juro.gif */; settings = {ASSET_TAGS = (); }; };
-		502247161BCB78B300A1D804 /* kuro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470E1BCB78B300A1D804 /* kuro.gif */; settings = {ASSET_TAGS = (); }; };
-		502247171BCB78B300A1D804 /* Minoru.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470F1BCB78B300A1D804 /* Minoru.gif */; settings = {ASSET_TAGS = (); }; };
-		502247181BCB78B300A1D804 /* Nao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247101BCB78B300A1D804 /* Nao.gif */; settings = {ASSET_TAGS = (); }; };
-		502247191BCB78B300A1D804 /* Nariko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247111BCB78B300A1D804 /* Nariko.gif */; settings = {ASSET_TAGS = (); }; };
-		5022471A1BCB78B300A1D804 /* Screen Shot 2015-07-24 at 3.38.41 pm.png in Resources */ = {isa = PBXBuildFile; fileRef = 502247121BCB78B300A1D804 /* Screen Shot 2015-07-24 at 3.38.41 pm.png */; settings = {ASSET_TAGS = (); }; };
-		5022471B1BCB78B300A1D804 /* Yoshiko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247131BCB78B300A1D804 /* Yoshiko.gif */; settings = {ASSET_TAGS = (); }; };
+		334813E21BE9E931007D116D /* CALayerAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334813E11BE9E931007D116D /* CALayerAniViewController.swift */; };
+		5006653B1BD0A6B900B38B93 /* YANetworkLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006653A1BD0A6B900B38B93 /* YANetworkLoadView.xib */; };
+		5006653E1BD0E6A000B38B93 /* RSAEncryptorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006653D1BD0E6A000B38B93 /* RSAEncryptorViewController.swift */; };
+		500665501BD0ED5700B38B93 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006654F1BD0ED5700B38B93 /* RSA.m */; };
+		500665561BD0F4D500B38B93 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 500665531BD0F4D500B38B93 /* NSData+CommonCrypto.m */; };
+		500665571BD0F4D500B38B93 /* RSAESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 500665551BD0F4D500B38B93 /* RSAESCryptor.m */; };
+		500665591BD0F75300B38B93 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 500665581BD0F75300B38B93 /* public_key.der */; };
+		5006655C1BD0F8D700B38B93 /* YARSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5006655B1BD0F8D700B38B93 /* YARSA.m */; };
+		502247141BCB78B300A1D804 /* ichiro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470C1BCB78B300A1D804 /* ichiro.gif */; };
+		502247151BCB78B300A1D804 /* juro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470D1BCB78B300A1D804 /* juro.gif */; };
+		502247161BCB78B300A1D804 /* kuro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470E1BCB78B300A1D804 /* kuro.gif */; };
+		502247171BCB78B300A1D804 /* Minoru.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5022470F1BCB78B300A1D804 /* Minoru.gif */; };
+		502247181BCB78B300A1D804 /* Nao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247101BCB78B300A1D804 /* Nao.gif */; };
+		502247191BCB78B300A1D804 /* Nariko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247111BCB78B300A1D804 /* Nariko.gif */; };
+		5022471A1BCB78B300A1D804 /* Screen Shot 2015-07-24 at 3.38.41 pm.png in Resources */ = {isa = PBXBuildFile; fileRef = 502247121BCB78B300A1D804 /* Screen Shot 2015-07-24 at 3.38.41 pm.png */; };
+		5022471B1BCB78B300A1D804 /* Yoshiko.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502247131BCB78B300A1D804 /* Yoshiko.gif */; };
 		504077C91BC75F7D008B591A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077C81BC75F7D008B591A /* AppDelegate.swift */; };
 		504077D01BC75F7D008B591A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504077CE1BC75F7D008B591A /* Main.storyboard */; };
 		504077D21BC75F7D008B591A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504077D11BC75F7D008B591A /* Assets.xcassets */; };
 		504077D51BC75F7D008B591A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504077D31BC75F7D008B591A /* LaunchScreen.storyboard */; };
-		504077DD1BC75FF2008B591A /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077DC1BC75FF2008B591A /* RootTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		504077E81BC76184008B591A /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E01BC76184008B591A /* HolderView.swift */; settings = {ASSET_TAGS = (); }; };
-		504077E91BC76184008B591A /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E21BC76184008B591A /* ArcLayer.swift */; settings = {ASSET_TAGS = (); }; };
-		504077EA1BC76184008B591A /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E31BC76184008B591A /* OvalLayer.swift */; settings = {ASSET_TAGS = (); }; };
-		504077EB1BC76184008B591A /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E41BC76184008B591A /* RectangleLayer.swift */; settings = {ASSET_TAGS = (); }; };
-		504077EC1BC76184008B591A /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E51BC76184008B591A /* TriangleLayer.swift */; settings = {ASSET_TAGS = (); }; };
-		504077ED1BC76184008B591A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E71BC76184008B591A /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
-		504077F11BC76297008B591A /* WaterGlassAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F01BC76297008B591A /* WaterGlassAnimationViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		504077F41BC7A3AB008B591A /* YaAutoLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F31BC7A3AB008B591A /* YaAutoLayoutTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		504077F61BC7A45B008B591A /* YaAutoLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F51BC7A45B008B591A /* YaAutoLayoutCell.swift */; settings = {ASSET_TAGS = (); }; };
-		504077FA1BC7A51C008B591A /* YaAutoLayoutCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 504077F91BC7A51C008B591A /* YaAutoLayoutCellModel.m */; settings = {ASSET_TAGS = (); }; };
-		504922B81BCF521600817E42 /* YAActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922B71BCF521600817E42 /* YAActivityIndicator.swift */; settings = {ASSET_TAGS = (); }; };
-		504922BA1BCF756D00817E42 /* refresh_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 504922B91BCF756D00817E42 /* refresh_button@2x.png */; settings = {ASSET_TAGS = (); }; };
-		504922BC1BCF7E1A00817E42 /* NetworkLoadTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922BB1BCF7E1A00817E42 /* NetworkLoadTestViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		504922BE1BCF9A3200817E42 /* YANetworkLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922BD1BCF9A3200817E42 /* YANetworkLoadView.swift */; settings = {ASSET_TAGS = (); }; };
-		50EE0F6E1BCB79080076402C /* IchiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F591BCB79080076402C /* IchiroTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F6F1BCB79080076402C /* JuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F5C1BCB79080076402C /* JuroTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F701BCB79080076402C /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F5F1BCB79080076402C /* KuroTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F711BCB79080076402C /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F621BCB79080076402C /* MinoruTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F721BCB79080076402C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F641BCB79080076402C /* PulsingHaloLayer.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F731BCB79080076402C /* BetaNaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F671BCB79080076402C /* BetaNaoTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F741BCB79080076402C /* NarikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F6A1BCB79080076402C /* NarikoTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F751BCB79080076402C /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F6D1BCB79080076402C /* YoshikoTextField.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F781BCB797F0076402C /* MMTextFieldEffectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F771BCB797F0076402C /* MMTextFieldEffectsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		50EE0F7B1BCB88050076402C /* YaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F7A1BCB88050076402C /* YaWebViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		504077DD1BC75FF2008B591A /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077DC1BC75FF2008B591A /* RootTableViewController.swift */; };
+		504077E81BC76184008B591A /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E01BC76184008B591A /* HolderView.swift */; };
+		504077E91BC76184008B591A /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E21BC76184008B591A /* ArcLayer.swift */; };
+		504077EA1BC76184008B591A /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E31BC76184008B591A /* OvalLayer.swift */; };
+		504077EB1BC76184008B591A /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E41BC76184008B591A /* RectangleLayer.swift */; };
+		504077EC1BC76184008B591A /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E51BC76184008B591A /* TriangleLayer.swift */; };
+		504077ED1BC76184008B591A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077E71BC76184008B591A /* Colors.swift */; };
+		504077F11BC76297008B591A /* WaterGlassAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F01BC76297008B591A /* WaterGlassAnimationViewController.swift */; };
+		504077F41BC7A3AB008B591A /* YaAutoLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F31BC7A3AB008B591A /* YaAutoLayoutTableViewController.swift */; };
+		504077F61BC7A45B008B591A /* YaAutoLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504077F51BC7A45B008B591A /* YaAutoLayoutCell.swift */; };
+		504077FA1BC7A51C008B591A /* YaAutoLayoutCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 504077F91BC7A51C008B591A /* YaAutoLayoutCellModel.m */; };
+		504922B81BCF521600817E42 /* YAActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922B71BCF521600817E42 /* YAActivityIndicator.swift */; };
+		504922BA1BCF756D00817E42 /* refresh_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 504922B91BCF756D00817E42 /* refresh_button@2x.png */; };
+		504922BC1BCF7E1A00817E42 /* NetworkLoadTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922BB1BCF7E1A00817E42 /* NetworkLoadTestViewController.swift */; };
+		504922BE1BCF9A3200817E42 /* YANetworkLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504922BD1BCF9A3200817E42 /* YANetworkLoadView.swift */; };
+		50EE0F6E1BCB79080076402C /* IchiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F591BCB79080076402C /* IchiroTextField.m */; };
+		50EE0F6F1BCB79080076402C /* JuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F5C1BCB79080076402C /* JuroTextField.m */; };
+		50EE0F701BCB79080076402C /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F5F1BCB79080076402C /* KuroTextField.m */; };
+		50EE0F711BCB79080076402C /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F621BCB79080076402C /* MinoruTextField.m */; };
+		50EE0F721BCB79080076402C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F641BCB79080076402C /* PulsingHaloLayer.m */; };
+		50EE0F731BCB79080076402C /* BetaNaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F671BCB79080076402C /* BetaNaoTextField.m */; };
+		50EE0F741BCB79080076402C /* NarikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F6A1BCB79080076402C /* NarikoTextField.m */; };
+		50EE0F751BCB79080076402C /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F6D1BCB79080076402C /* YoshikoTextField.m */; };
+		50EE0F781BCB797F0076402C /* MMTextFieldEffectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F771BCB797F0076402C /* MMTextFieldEffectsTableViewController.m */; };
+		50EE0F7B1BCB88050076402C /* YaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EE0F7A1BCB88050076402C /* YaWebViewController.swift */; };
 		5698B721889970B7A250D315 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3049540D299AC29254BA92FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AEF981ACB8A9D6D6547CE94 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3049540D299AC29254BA92FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		334813E11BE9E931007D116D /* CALayerAniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerAniViewController.swift; sourceTree = "<group>"; };
 		5006653A1BD0A6B900B38B93 /* YANetworkLoadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YANetworkLoadView.xib; sourceTree = "<group>"; };
 		5006653D1BD0E6A000B38B93 /* RSAEncryptorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAEncryptorViewController.swift; sourceTree = "<group>"; };
 		5006654E1BD0ED5700B38B93 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334813E01BE9E8D9007D116D /* 让你的应用“动”起来 */ = {
+			isa = PBXGroup;
+			children = (
+				334813E11BE9E931007D116D /* CALayerAniViewController.swift */,
+			);
+			name = "让你的应用“动”起来";
+			sourceTree = "<group>";
+		};
 		4399322DEA04DFA79D47FBBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		504077C71BC75F7D008B591A /* TestDemoPark */ = {
 			isa = PBXGroup;
 			children = (
+				334813E01BE9E8D9007D116D /* 让你的应用“动”起来 */,
 				5006653C1BD0E5D700B38B93 /* RSA加密 */,
 				504077DE1BC76127008B591A /* 水杯动画 */,
 				50EE0F791BCB87DE0076402C /* 测试WEB布局 */,
@@ -536,6 +547,7 @@
 				50EE0F6E1BCB79080076402C /* IchiroTextField.m in Sources */,
 				50EE0F731BCB79080076402C /* BetaNaoTextField.m in Sources */,
 				504077F61BC7A45B008B591A /* YaAutoLayoutCell.swift in Sources */,
+				334813E21BE9E931007D116D /* CALayerAniViewController.swift in Sources */,
 				50EE0F7B1BCB88050076402C /* YaWebViewController.swift in Sources */,
 				504077F41BC7A3AB008B591A /* YaAutoLayoutTableViewController.swift in Sources */,
 				504077ED1BC76184008B591A /* Colors.swift in Sources */,
